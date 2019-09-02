@@ -11,7 +11,7 @@ import java.util.Date;
  **/
 @Data
 public class PersonInfo {
-    private Long userID;
+    private Long userId;
     private String userName;
     private String  profileImg;
     private String email;

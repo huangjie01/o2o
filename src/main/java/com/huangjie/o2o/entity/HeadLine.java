@@ -11,7 +11,7 @@ import java.util.Date;
  **/
 @Data
 public class HeadLine {
-    private Long lineID;
+    private Long lineId;
     private String lineName;
     private String lineLink;
     private String lineImg;

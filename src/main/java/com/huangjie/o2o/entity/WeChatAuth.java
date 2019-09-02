@@ -11,8 +11,8 @@ import java.util.Date;
  **/
 @Data
 public class WeChatAuth {
-    private Long weChatAuthID;
-    private String openID;
+    private Long weChatAuthId;
+    private String openId;
     private Date createTime;
     private PersonInfo personInfo;
 

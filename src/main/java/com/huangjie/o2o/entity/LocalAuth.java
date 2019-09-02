@@ -11,7 +11,7 @@ import java.util.Date;
  **/
 @Data
 public class LocalAuth {
-    private Long localAuthID;
+    private Long localAuthId;
     private String userName;
     private String password;
     private Date createTime;
