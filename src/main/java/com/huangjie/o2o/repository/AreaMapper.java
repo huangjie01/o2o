@@ -13,4 +13,7 @@ import java.util.List;
 @Mapper
 public interface AreaMapper {
     List<Area> queryArea();
+
+    int insertArea(Area area);
+
 }
