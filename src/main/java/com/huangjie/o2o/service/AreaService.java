@@ -2,6 +2,7 @@ package com.huangjie.o2o.service;
 
 import com.huangjie.o2o.entity.Area;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.List;
 
 /**
@@ -12,5 +13,8 @@ import java.util.List;
 public interface AreaService {
 
     List<Area> listAllArea();
+
     int insertArea(Area area);
+
+    Area findAreaById(Long areaId);
 }

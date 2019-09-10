@@ -16,4 +16,5 @@ public interface AreaMapper {
 
     int insertArea(Area area);
 
+   Area findAreaById(Long areaId);
 }

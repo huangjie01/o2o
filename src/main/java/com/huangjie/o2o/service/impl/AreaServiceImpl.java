@@ -27,5 +27,8 @@ public class AreaServiceImpl implements AreaService {
         return areaMapper.insertArea(area);
     }
 
-
+    @Override
+    public Area findAreaById(Long areaId) {
+        return areaMapper.findAreaById(areaId);
+    }
 }

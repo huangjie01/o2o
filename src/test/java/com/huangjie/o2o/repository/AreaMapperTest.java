@@ -9,6 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author huangjie
@@ -24,12 +25,19 @@ public class AreaMapperTest {
 
     @Test
     public void queryArea() {
-        areaMapper.queryArea();
+        List<Area> areas = areaMapper.queryArea();
+        System.out.println(areas.toString());
     }
 
     @Test
-    public void testInsert(){
-        Area area=new Area();
+    public void findAreaById() {
+        Area area = areaMapper.findAreaById(1L);
+        System.out.println(area.toString());
+    }
+
+    @Test
+    public void testInsert() {
+        Area area = new Area();
         area.setAreaName("软件园E区");
         area.setAreaDesc("位置位于天府五街");
         area.setPriority(1);

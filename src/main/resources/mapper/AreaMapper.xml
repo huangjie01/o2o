@@ -11,4 +11,8 @@
         INSERT INTO tb_area(area_name,area_desc,priority,create_time,update_time)
         VALUES (#{areaName},#{areaDesc},#{priority},#{createTime},#{updateTime})
     </insert>
+
+    <select id="findAreaById" resultType="com.huangjie.o2o.entity.Area" parameterType="long">
+           SELECT area_id,area_name,area_desc,priority,create_time,update_time FROM tb_area WHERE area_id=#{areaId}
+    </select>
 </mapper>

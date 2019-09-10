@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huangjie.o2o.repository.PersonInfoMapper">
+    <insert id="insertPersonInfo" keyColumn="user_id" keyProperty="userId">
+            INSERT INTO tb_person_info(name,profile_img,email,gender,
+            enalbe_status,user_type,create_time,update_time)VALUES(#{userName},#{profileImg},
+            #{email},#{gender},#{enableStatus},#{userType},#{createTime},#{updateTime})
+                </insert>
+</mapper>
